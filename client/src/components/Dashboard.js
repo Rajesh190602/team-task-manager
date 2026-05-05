@@ -5,8 +5,8 @@ function Dashboard() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetchTasks();
-  }, []);
+  fetchTasks();
+}, []);
 
   const fetchTasks = async () => {
     try {

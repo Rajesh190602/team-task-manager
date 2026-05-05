@@ -19,7 +19,7 @@ function TaskList() {
 
   const updateStatus = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/tasks/${id}`, {
+      await axios.put(`http://team-task-manager-back.onrender.com/api/tasks/${id}`, {
         status: "Completed"
       });
 
