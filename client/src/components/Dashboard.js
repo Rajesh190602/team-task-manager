@@ -3,9 +3,7 @@ import axios from "axios";
 
 function Dashboard() {
   const [tasks, setTasks] = useState([]);
-  useEffect(() => {
-  fetchTasks();
-}, []);
+  
 
   const fetchTasks = async () => {
     try {
@@ -15,6 +13,9 @@ function Dashboard() {
       console.log(error);
     }
   };
+  useEffect(() => {
+  fetchTasks();
+}, []);
 
   const totalTasks = tasks.length;
   const completedTasks = tasks.filter(
