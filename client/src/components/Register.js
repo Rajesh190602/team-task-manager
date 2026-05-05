@@ -18,7 +18,7 @@ function Register() {
   const handleRegister = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://team-task-manager-back.onrender.com/api/auth/register",
         {
           name: registerData.name,
           email: registerData.email,

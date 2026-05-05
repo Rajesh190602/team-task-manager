@@ -10,7 +10,7 @@ function TaskList() {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/tasks");
+      const res = await axios.get("http://team-task-manager-back.onrender.com/api/tasks");
       setTasks(res.data);
     } catch (error) {
       console.log(error);

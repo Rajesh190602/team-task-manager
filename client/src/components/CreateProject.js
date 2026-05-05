@@ -19,7 +19,7 @@ function CreateProject() {
       const token = localStorage.getItem("token");
 
       const res = await axios.post(
-        "http://localhost:5000/api/projects/create",
+        "https://team-task-manager-back.onrender.com/api/projects/create",
         {
           title: projectData.title,
           description: projectData.description
