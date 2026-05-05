@@ -10,7 +10,7 @@ function TaskList() {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get("http://team-task-manager-back.onrender.com/api/tasks");
+      const res = await axios.get("https://team-task-manager-back.onrender.com/api/tasks");
       setTasks(res.data);
     } catch (error) {
       console.log(error);
@@ -19,7 +19,7 @@ function TaskList() {
 
   const updateStatus = async (id) => {
     try {
-      await axios.put(`http://team-task-manager-back.onrender.com/api/tasks/${id}`, {
+      await axios.put(`https://team-task-manager-back.onrender.com/api/tasks/${id}`, {
         status: "Completed"
       });
 

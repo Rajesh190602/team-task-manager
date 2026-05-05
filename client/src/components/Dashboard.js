@@ -7,7 +7,7 @@ function Dashboard() {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get("http://team-task-manager-back.onrender.com/api/tasks");
+      const res = await axios.get("https://team-task-manager-back.onrender.com/api/tasks");
       setTasks(res.data);
     } catch (error) {
       console.log(error);
