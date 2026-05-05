@@ -3,7 +3,6 @@ import axios from "axios";
 
 function Dashboard() {
   const [tasks, setTasks] = useState([]);
-
   useEffect(() => {
   fetchTasks();
 }, []);
